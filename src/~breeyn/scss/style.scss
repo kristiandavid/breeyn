@@ -8,4 +8,10 @@
 
     License: MIT
     License URI: http://opensource.org/licenses/mit-license.php
-*/body{background:#fff}.wrapper{width:50rem;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;grid-gap:.625rem}
+*/
+
+@import "util/functions";
+@import "util/mixins";
+
+@import "partial1";
+@import "partial2";

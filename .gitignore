@@ -2,7 +2,7 @@
 /*.txt
 *.html
 
-src/~breeyn/node_modules
+node_modules/
 
 wp-*.php
 xmlrpc.php
