@@ -2,6 +2,8 @@
 /*.txt
 *.html
 
+src/~breeyn/node_modules
+
 wp-*.php
 xmlrpc.php
 
