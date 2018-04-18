@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-  <div class="wrapper">
+  <div class="mainContent">
     <div class="item">Yello</div>
     <div class="item">Yo!!</div>
   </div>
