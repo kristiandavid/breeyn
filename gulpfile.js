@@ -19,12 +19,12 @@ const
   deporder      = require('gulp-deporder'),
   concat        = require('gulp-concat'),
   stripdebug    = require('gulp-strip-debug'),
-  uglify        = require('gulp-uglify')
+  uglify        = require('gulp-uglify'),
+  sassLint      = require('gulp-sass-lint')
 ;
 
 // Browser-sync
 var browsersync = false;
-
 
 // PHP settings
 const php = {
@@ -43,8 +43,8 @@ gulp.task('php', () => {
 
 // image settings
 const images = {
-  src         : dir.src + 'images/**/*',
-  build       : dir.build + 'images/'
+  src         : dir.src + 'img/**/*',
+  build       : dir.build + 'img/'
 };
 
 // image processing

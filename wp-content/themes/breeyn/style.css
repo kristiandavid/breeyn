@@ -8,4 +8,4 @@
 
     License: MIT
     License URI: http://opensource.org/licenses/mit-license.php
-*/body{background:#fff}.wrapper{width:50rem;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;grid-gap:.625rem}
+*/@import url("https://fonts.googleapis.com/css?family=Lato|Playball|Raleway");body{background:#fff;margin:0;padding:0;font-family:Lato,sans-serif;font-size:1rem;color:#696969}header{position:fixed;background:hsla(0,0%,100%,.95);width:100%;z-index:1;color:dimgray;padding:0}header .wrap{width:auto;display:grid;grid-template-columns:1fr 3fr;grid-gap:.625rem;grid-template-areas:"a b";margin:0 .938rem}header .logo{grid-area:a}header .menu{grid-area:b;justify-self:end}
