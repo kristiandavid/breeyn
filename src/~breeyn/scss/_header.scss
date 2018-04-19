@@ -7,18 +7,24 @@ header {
   color: dimgray;
   padding: 0;
 
-  .wrap {
+  .header__wrap {
     @include grid(1fr 3fr, "", rem(10px));
     grid-template-areas: "logo menu";
     margin: 0 rem(15px);
   }
 
-  .logo {
+  .header__logo {
     grid-area: logo;
   }
 
-  .menu {
+  .header__logo-img {
+    max-width: rem(120px);
+    margin-bottom: rem(-15px);
+  }
+
+  .header__menu {
     grid-area: menu;
     justify-self: end;
+    align-self: center;
   }
 }

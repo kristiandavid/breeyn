@@ -29,12 +29,14 @@
 <body <?php body_class(); ?>>
 
   <header>
-    <div class="wrap">
-      <div class="logo">
-        logo!
+    <div class="header__wrap">
+      <div class="header__logo">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/newLogo.png" alt="Breeyn McCarney logo" class="header__logo-img">
+        </a>
       </div>
-      <div class="menu">
-        menu!
+      <div class="header__menu">
+        <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
       </div>
     </div>
   </header>
