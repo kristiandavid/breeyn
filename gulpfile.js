@@ -112,6 +112,24 @@ gulp.task('js', () => {
 });
 
 
+const sw = {
+  src         : dir.src + 'sw/**/*.js',
+  build       : '',
+  filename    : 'sw.js'
+};
+
+gulp.task('sw', () => {
+  return gulp.src(dir.src + 'sw/**/*.js')
+    .pipe(deporder())
+    .pipe(concat(sw.filename))
+    .pipe(stripdebug())
+    .pipe(uglify())
+    .pipe(gulp.dest(sw.build))
+    .pipe(browsersync ? browsersync.reload({ stream: true }) : gutil.noop());
+
+});
+
+
 // Browsersync options
 const syncOpts = {
   proxy       : 'b2018.local',
@@ -148,6 +166,7 @@ gulp.task('watch', ['browsersync'], () => {
 
   // JavaScript main changes
   gulp.watch(js.src, ['js']);
+  gulp.watch(sw.src, ['sw']);
 
 });
 

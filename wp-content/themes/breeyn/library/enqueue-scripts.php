@@ -16,6 +16,9 @@ if ( ! function_exists( 'breeyn_scripts' ) ) :
 		// Enqueue the main Stylesheet.
 		wp_enqueue_style( 'stylescss', get_stylesheet_directory_uri() . '/style.css' );
 
+		// Enqueue scripts js
+		wp_enqueue_script( 'scriptsjs', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0', false );
+
 		// Deregister the jquery version bundled with WordPress.
 		wp_deregister_script( 'jquery' );
 
